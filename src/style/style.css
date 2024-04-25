@@ -1,0 +1,97 @@
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+    }
+}
+
+.w3-content {
+    justify-content: center;
+    text-align: justify;
+    color: grey;
+    padding: 12px;
+}
+
+.w3-text-light-grey {
+    color: rgba(211, 211, 211, 0.253);
+}
+
+.w3-margin-top {
+    margin-top: 16px;
+}
+
+.w3-third {
+    width: 100%;
+    padding: 16px;
+    animation: hackerCode 2s infinite;
+}
+
+
+.w3-card {
+    background-color: white;
+    padding: 16px;
+}
+
+.w3-container {
+    margin-bottom: 16px;
+}
+
+.w3-container h4 {
+    margin-top: 0;
+}
+
+.w3-container p {
+    margin-bottom: 0;
+}
+
+/* Additional styles for Challenge Categories */
+.w3-padding-64 {
+    padding: 12px;
+}
+
+.w3-justify {
+    text-align: justify;
+}
+
+.w3-button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.w3-button:hover {
+    background-color: #ddd;
+}
+
+
+/* Add a background color to the active tab */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+    
+
+
