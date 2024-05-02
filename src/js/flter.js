@@ -1,22 +1,34 @@
-// Get all challenge elements
-const challenges = document.querySelectorAll('.challenge-box');
-
-// Function to filter challenges based on search input
 function filterChallenges() {
-  // Get search input
-  const searchInput = document.getElementById('searchBox').value.toLowerCase();
+  var category = document.getElementById('categoryFilter').value;
+  var challenges = document.getElementById('challenges').children;
 
-  challenges.forEach(challenge => {
-    // Get challenge name
-    const challengeName = challenge.querySelector('h3').textContent.toLowerCase();
-
-    if (challengeName.includes(searchInput)) {
-      challenge.style.display = 'block';
-    } else {
-      challenge.style.display = 'none';
-    }
-  });
+  for (var i = 0; i < challenges.length; i++) {
+      var challenge = challenges[i];
+      if (category === 'all' || challenge.getAttribute('data-category') === category) {
+          challenge.style.display = '';
+      } else {
+          challenge.style.display = 'none';
+      }
+  }
 }
 
-// Add event listener to search box
-document.getElementById('searchBox').addEventListener('keyup', filterChallenges);
+// Assuming you have a list of categories
+var categories = ['osint', 'math', 'crypto', 'detective', 'coding'];
+
+// Get the category filter dropdown
+var categoryFilter = document.getElementById('categoryFilter');
+
+// Create an option element for each category
+categories.forEach(function(category) {
+    var option = document.createElement('option');
+    option.value = category;
+    option.text = category.charAt(0).toUpperCase() + category.slice(1); // Capitalize the first letter
+    categoryFilter.appendChild(option);
+});
+
+// Don't forget to add the 'All' option
+var allOption = document.createElement('option');
+allOption.value = 'all';
+allOption.text = 'All';
+categoryFilter.insertBefore(allOption, categoryFilter.firstChild);
+
