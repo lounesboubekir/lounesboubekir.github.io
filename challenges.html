@@ -1,107 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cryptography - UnmZit</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="chan style/chan_style.css">
-    <style>
-        .challenge-box {
-            margin-bottom: 20px;
-        }
-    </style>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MNGSW5Z9');</script>
+  <!-- End Google Tag Manager -->
+  <title>sole - UnmZit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="chan style/chan_style.css">
+  <style>
+    .challenge-box {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body class="w3-black">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNGSW5Z9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <div class="w3-bar w3-black">
     <a href="index.html" class="w3-bar-item w3-button">Home</a>
     <!-- Add more navigation links as needed -->
 </div>
 
-<!-- Page Content -->
-<div class="w3-container" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <p>Test your  skills with these challenging puzzles and mysteries.</p>
-    </header>
+<header class="w3-container w3-center w3-padding-32">
+    <h1 class="w3-jumbo">UnmZit Challenges</h1>
+    <p>Filter challenges by category:</p>
+    <input type="text" id="searchBox" placeholder="Search for challenges...">
+    <select id="categoryFilter" onchange="filterChallenges()">
+        <option value="all">All</option>
+        <option value="osint">OSINT</option>
+        <option value="math">Math</option>
+        <option value="crypto">Crypto</option>
+        <option value="detective">Detective</option>
+        <option value="coding">Coding</option>
+        </select>
+</header>
 
-    <!-- Filter Section -->
-    <div class="w3-container">
-        <label for="Theme"> by Theme </label>
-        <select id="Theme">
-            <option value="">All</option>
-            <option value="osint">osint</option>
-            <option value="math">math</option>
-            <option value="Cryptography">Cryptography</option>
-            <!-- Add more options as needed -->
-        </select>
-        <br>
-        <label for="difficulty"> by Difficulty</label>
-        <select id="category">
-            <option value="">All</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
-            <!-- Add more options as needed -->
-        </select>
-    </div>
-    <br>
-    <br>
-    <!-- Challenges Section -->
+<section class="w3-container" id="challenges">
+    <!-- Challenges will be loaded here dynamically -->
+</section>
+
     <section class="w3-container" id="challenges">
-        <div class="w3-row-padding">
-            <div class="w3-col l4 m6 w3-margin-bottom">
-                <div class="w3-card challenge-box">
-                    <h3> Caesar </h3>
-                    <img src="src/imgs/chalenges/crypto/ch1.jpg" alt="Caesar Cipher" style="width:100%">
-                    <div class="w3-container">
-                        
-                        <p>Theme: Cryptography</p>
-                        <p>Difficulty: Easy</p>
-                        <p>Description:  In this challenge, you will learn about the Caesar cipher, one of the simplest and most widely known encryption techniques. Your task is to write a program that can encrypt and decrypt messages using the Caesar cipher.</p>
-                        <p>Date: January 2022</p>
-                        <a href="#" class="w3-button w3-black">Solve</a>
-                    </div>
-                    <div class="w3-container"></div>
-<!-- Existing Challenge -->
-<div class="w3-col l4 m6 w3-margin-bottom">
-    <div class="w3-card challenge-box">
-        <h3>Caesar</h3>
-        <img src="src/imgs/chalenges/crypto/ch1.jpg" alt="Caesar Cipher" style="width:100%">
-        <div class="w3-container">
-            <p>Theme: Cryptography</p>
-            <p>Difficulty: Easy</p>
-            <p>Description: In this challenge, you will learn about the Caesar cipher, one of the simplest and most widely known encryption techniques. Your task is to write a program that can encrypt and decrypt messages using the Caesar cipher.</p>
-            <p>Date: January 2022</p>
-            <a href="#" class="w3-button w3-black">Solve</a>
-        </div>
-    </div>
-</div>
-
-<!-- New Challenge -->
-<div class="w3-col l4 m6 w3-margin-bottom">
-    <div class="w3-card challenge-box">
-        <h3>New Challenge</h3>
-        <img src="src/imgs/chalenges/crypto/new_challenge.jpg" alt="New Challenge" style="width:100%">
-        <div class="w3-container">
-            <p>Theme: New Theme</p>
-            <p>Difficulty: Medium</p>
-            <p>Description: Description of the new challenge goes here.</p>
-            <p>Date: February 2022</p>
-            <a href="#" class="w3-button w3-black">Solve</a>
-        </div>
-    </div>
-</div>
+      <!-- Challenges will be loaded here dynamically -->
     </section>
-
-    <footer>
-        <!-- Footer details go here -->
-    </footer>
-</div>
-
-<script src="src/js/flter.js"></script>
-<script src="src/js/main.js"></script>
+  </div>
+  <script src="src/js/load-challenges.js"></script>
+  <script src="src/js/filter.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 </html>
