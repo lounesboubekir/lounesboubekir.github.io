@@ -1,10 +1,11 @@
 // Array of challenge file paths
 const challengeFiles = [
     'src/challenges/osint.html',
-    'src/challenges/crypto.html',
-    'src/challenges/detctive.html',
+    'src/challenges/detctive.html', 
+    'src/challenges/crypto.html', 
     'src/challenges/math.html',
-    'src/challenges/codeing.html', 
+    'src/challenges/codeing.html'
+    
   ];
   
   // Function to load a challenge file
