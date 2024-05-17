@@ -11,6 +11,7 @@ function loadChallenge(filePath) {
       const challengeContainer = document.getElementById('challenges');
       const div = document.createElement('div');
       div.innerHTML = html;
+
       challengeContainer.appendChild(div);
     })
     .catch(error => console.error(`Error loading ${filePath}:`, error));
