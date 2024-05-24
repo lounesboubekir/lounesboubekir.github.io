@@ -22,6 +22,6 @@ We welcome contributions from our community. If you have a puzzle or challenge y
 
 ## Contact
 
-For any queries or feedback, please reach out to us at [contact@unmzit.com](mailto:contact@unmzit.com).
+For any queries or feedback, please reach out to us at []
 
 Join us in unraveling the unsolvable and becoming part of the legend at UnmZit!
